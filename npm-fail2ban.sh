@@ -152,7 +152,7 @@ case "$MODE" in
     echo "  --install   → telepítés"
     echo "  --uninstall → eltávolítás"
     echo
-    echo "curl -fsSL https://raw.githubusercontent.com/siraly1636/Nginx-Proxy-Manager-Fail2Ban/refs/heads/main/npm-fail2ban.sh | bash -s --install"
+    echo "bash -c "$(curl -fsSL https://raw.githubusercontent.com/siraly1636/Nginx-Proxy-Manager-Fail2Ban/refs/heads/main/npm-fail2ban.sh)" -s --install"
     exit 1
     ;;
 esac
